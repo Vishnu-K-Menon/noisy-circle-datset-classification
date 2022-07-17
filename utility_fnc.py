@@ -70,7 +70,7 @@ def initialize_parameters(layers_dims):
     parameters = {}
     L = len(layers_dims)
     for l in range(1,L):
-        parameters['w'+str(l)] = np.random.randn(layers_dims[l], layers_dims[l-1])*np.sqrt(2 / layer_dims[l-1])
+        parameters['w'+str(l)] = np.random.randn(layers_dims[l], layers_dims[l-1])*np.sqrt(2 / layers_dims[l-1])
         parameters['b'+str(l)] = np.zeros((layers_dims[l], 1))
         
         
