@@ -65,7 +65,7 @@ def parameters_and_grads(seed=1):
 
 
 def initialize_parameters(layers_dims):
-    
+    np.random.seed(3)
     parameters = {}
     L = len(layers_dims)
     for l in range(1,L):
