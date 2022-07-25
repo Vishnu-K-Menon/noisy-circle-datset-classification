@@ -102,7 +102,6 @@ def forward_propagation(X, parameters):
     b2 = parameters["b2"]
     W3 = parameters["W3"]
     b3 = parameters["b3"]
-    
     z1 = np.dot(W1, X) + b1
     a1 = relu(z1)
     z2 = np.dot(W2, a1) + b2
